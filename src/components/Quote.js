@@ -2,23 +2,26 @@ import React from 'react';
 
 const Quote = () => {
 
-    const endPoint = 'https://api.themotivate365.com/stoic-quote';
+    // Different API endpoints to try
+    const endPointA = 'https://api.themotivate365.com/stoic-quote';
+    //CORS issue
+    const endPointB = 'https://stoicquotesapi.com/v1/api/quotes/random';
+    //Returns single quote
+    const endPointC = 'https://stoic-quotes.com/api/quotes';
+    //Returns 10 quotes
+    const endPointD = 'https://randomstoicquotesapi.herokuapp.com';
+    //Throws JSON error
 
-    let response = {}
+    let quotes = {}
 
-    fetch(endPoint)
-        .then(response => {
-            // console.log(response);
-            response.json();
-        })
-        .then(data => {
-            console.log(data)
-            response = data;
-        }
-        );
+    // Change argument to corespond to desired endpoint
+
+    fetch(endPointB)
+        .then(data => data.json())
+        .then(data => console.log(data));
 
     return (
-        <p>{response}</p>
+        <p>quote</p>
     )
 }
 

@@ -3,3 +3,15 @@ body {
     color: white;
     font-family: helvetica;
 }
+
+.container > * {
+    border: 2px solid white;
+    padding: 5rem;
+}
+
+.container:first-child {
+    display: grid;
+    justify-content: center;
+}
+
+

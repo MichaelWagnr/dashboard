@@ -1,17 +1,15 @@
 import React from 'react';
 
 import Header from './Header';
-import StoicQuote from './StoicQuote';
+import Quote from './Quote';
 
 class App extends React.Component {
-
-
 
     render() {
         return (
             <div className="container">
                 <Header />
-                <StoicQuote />
+                <Quote />
             </div>
         )
     }

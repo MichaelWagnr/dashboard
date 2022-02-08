@@ -1,17 +1,31 @@
+html {box-sizing: border-box;}
+  *, *:before, *:after{box-sizing: inherit;}
+
 body {
     background-color: black;
     color: white;
     font-family: helvetica;
 }
 
+.container {
+    width: 90vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+}
+
 .container > * {
+    width: 100%;
     border: 2px solid white;
-    padding: 5rem;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 5px;
+    display: grid;
+    align-content: center;
 }
 
 .container:first-child {
-    display: grid;
-    justify-content: center;
+    text-align: center;
 }
 
 

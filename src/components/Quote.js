@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Quote = () => {
-
+const Quote = (props) => {
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     // Different API endpoints to try
 
     // const endPointA = 'https://api.themotivate365.com/stoic-quote';
     //CORS issue
 
-    const endPointB = 'https://stoicquotesapi.com/v1/api/quotes/random';
+    // const endPointB = 'https://stoicquotesapi.com/v1/api/quotes/random';
     //Returns single quote
 
     // const endPointC = 'https://stoic-quotes.com/api/quotes';
@@ -19,14 +18,16 @@ const Quote = () => {
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    // let results = null;
 
-    // Change argument to correspond to desired endpoint
-    fetch(endPointB)
-        .then(data => data.json())
-        .then(data => console.log(data));
+    // // Change argument to correspond to desired endpoint
+    // fetch('https://stoicquotesapi.com/v1/api/quotes/random')
+    //     .then(data => data.json())
+    //     .then(data => console.log(data))
+
 
     return (
-        <p>quote</p>
+        <p>{props.quote.body} - {props.quote.author}</p>
     )
 }
 

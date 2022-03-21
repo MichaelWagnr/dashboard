@@ -1,1 +1,1 @@
-My first attempt at a simple React dashboard app.
+A simple React dashboard. With time-specific greeting and use of a philosophy quote API.

@@ -10,7 +10,7 @@ const Header = () => {
             ? "Good Evening"
             : (hours < 12)
                 ? "Good Morning"
-                : "Good Afternoon"} Michael</h1>
+                : "Good Afternoon"}</h1>
     )
 }
 

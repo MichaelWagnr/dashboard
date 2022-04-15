@@ -1,0 +1,2 @@
+html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{background-color:#000;color:#fff;display:grid;font-family:helvetica;height:98vh;place-items:center}.container{display:grid;grid-template-rows:1fr 1fr;margin:auto;width:90vw;width:80%}.container>*{align-content:center;border:2px solid #fff;border-radius:5px;display:grid;margin:5px;padding:2rem;width:100%}.container:first-child{text-align:center}
+/*# sourceMappingURL=main.ea35aaf4.css.map*/

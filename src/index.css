@@ -21,6 +21,7 @@ body {
     width: 90vw;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    width: 80%;
     margin: auto;
 }
 
